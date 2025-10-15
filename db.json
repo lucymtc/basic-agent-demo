@@ -1,3 +1,40 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hey what is my name?",
+      "id": "0557eb44-ce01-4514-9569-ae96d89d510c",
+      "createdAt": "2025-10-14T18:44:44.506Z"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm sorry, but I don't have access to personal information about you unless you've shared it in this conversation. How can I assist you today?",
+      "id": "54c72fef-a694-4895-a310-baa4a6fad7c2",
+      "createdAt": "2025-10-14T18:44:46.693Z"
+    },
+    {
+      "role": "user",
+      "content": "My name is Lucy ",
+      "id": "adcdf073-fa2a-415b-b491-e2416049d408",
+      "createdAt": "2025-10-14T18:45:02.583Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice to meet you, Lucy! How can I assist you today?",
+      "id": "d4b67dad-5ebb-4704-bee3-167a33589841",
+      "createdAt": "2025-10-14T18:45:04.551Z"
+    },
+    {
+      "role": "user",
+      "content": "Hey what is my name?",
+      "id": "e55e50ec-35e4-406a-943d-e25ebc14e708",
+      "createdAt": "2025-10-14T18:45:10.158Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is Lucy! How can I help you today?",
+      "id": "399ab9d2-8d7c-458f-9424-f967383d6e8f",
+      "createdAt": "2025-10-14T18:45:12.081Z"
+    }
+  ]
 }
