@@ -21,7 +21,7 @@ export const removeMetadata = (message: MessageWithMetadata): AIMessage => {
 
 type Data = {
     messages: MessageWithMetadata[]
-}
+};
 
 // Our DB is just an object with a messages array.
 const defaultData: Data = { messages: [] };
@@ -29,16 +29,20 @@ const defaultData: Data = { messages: [] };
 export const getDb = async () => {
   const db = await JSONFilePreset<Data>('db.json', defaultData);
   return db;
-}
+};
 
 export const addMessages = async (messages: AIMessage[]) => {
   const db = await getDb()
   db.data.messages.push(...messages.map(addMetadata))
   await db.write()
-}
+};
 
 export const getMessages = async () => {
   const db = await getDb();
   // we remove the metadata because we are about to feedd it to AI and it will break if we send something it doesn't support.
   return db.data.messages.map(removeMetadata);
-}
+};
+
+export const saveToolResponse = async (toolCallId: string, toolResponse: string) => {
+ return addMessages([{ role: 'tool', content: toolResponse, tool_call_id: toolCallId }]);
+};

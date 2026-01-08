@@ -2,39 +2,56 @@
   "messages": [
     {
       "role": "user",
-      "content": "Hey what is my name?",
-      "id": "0557eb44-ce01-4514-9569-ae96d89d510c",
-      "createdAt": "2025-10-14T18:44:44.506Z"
+      "content": "hi, my name is Lucy",
+      "id": "83560375-2afb-42e7-8100-ef64530e9925",
+      "createdAt": "2026-01-08T16:42:38.691Z"
     },
     {
       "role": "assistant",
-      "content": "I'm sorry, but I don't have access to personal information about you unless you've shared it in this conversation. How can I assist you today?",
-      "id": "54c72fef-a694-4895-a310-baa4a6fad7c2",
-      "createdAt": "2025-10-14T18:44:46.693Z"
+      "content": "Hi Lucy! How can I assist you today?",
+      "refusal": null,
+      "annotations": [],
+      "id": "2384cc43-8097-42ea-a144-edd240e2c440",
+      "createdAt": "2026-01-08T16:42:40.544Z"
     },
     {
       "role": "user",
-      "content": "My name is Lucy ",
-      "id": "adcdf073-fa2a-415b-b491-e2416049d408",
-      "createdAt": "2025-10-14T18:45:02.583Z"
+      "content": "what is the weather like in Madrid?",
+      "id": "df75d108-1d2c-421e-870f-33dfaeab52b4",
+      "createdAt": "2026-01-08T16:43:04.602Z"
     },
     {
       "role": "assistant",
-      "content": "Nice to meet you, Lucy! How can I assist you today?",
-      "id": "d4b67dad-5ebb-4704-bee3-167a33589841",
-      "createdAt": "2025-10-14T18:45:04.551Z"
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_lw1NsG3BPr7QHiB16xkvgOml",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"User asked for the current weather in Madrid.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "ce06194d-0775-4cf2-af75-a65203fea909",
+      "createdAt": "2026-01-08T16:43:06.585Z"
     },
     {
-      "role": "user",
-      "content": "Hey what is my name?",
-      "id": "e55e50ec-35e4-406a-943d-e25ebc14e708",
-      "createdAt": "2025-10-14T18:45:10.158Z"
+      "role": "tool",
+      "content": "it's cold 15 degrees Celsius",
+      "tool_call_id": "call_lw1NsG3BPr7QHiB16xkvgOml",
+      "id": "491a1986-a402-4306-8f53-4dd235ed3d5f",
+      "createdAt": "2026-01-08T16:43:06.587Z"
     },
     {
       "role": "assistant",
-      "content": "Your name is Lucy! How can I help you today?",
-      "id": "399ab9d2-8d7c-458f-9424-f967383d6e8f",
-      "createdAt": "2025-10-14T18:45:12.081Z"
+      "content": "The weather in Madrid is currently cold, with a temperature of 15 degrees Celsius. Is there anything else you'd like to know?",
+      "refusal": null,
+      "annotations": [],
+      "id": "58ec7be3-70bc-4a05-94e2-2054dbd58af4",
+      "createdAt": "2026-01-08T16:43:07.918Z"
     }
   ]
 }
